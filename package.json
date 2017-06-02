@@ -1,14 +1,15 @@
 {
   "name": "yipt",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Yaml based pdf template engine.",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": "./lib/cli.js",
   "scripts": {
     "test": "mocha --require source-map-support/register --require ts-node/register --recursive tests",
     "clean": "rimraf {lib,tests}/**/*.{js,js.map}",
     "prepublish": "npm run clean && tsc && npm run test"
   },
-  "bin": "./lib/cli.js",
   "keywords": [
     "PDF",
     "Yaml",
