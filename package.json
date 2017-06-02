@@ -13,7 +13,8 @@
   "keywords": [
     "PDF",
     "Yaml",
-    "template"
+    "template",
+    "pdfkit"
   ],
   "author": "Webnium (https://webnium.co.jp)",
   "contributors": [
