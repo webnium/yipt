@@ -112,7 +112,7 @@ variables:
   myObject: { left: 20 },
 }   
 ```
-Then, "This text placed on (myObject.left, myVariableForTop)." is rendered at (20, 10).
+Then, `"This text placed on (myObject.left, myVariableForTop)."` is rendered at (20, 10).
 
 template:
 ```yaml
@@ -128,7 +128,7 @@ variables:
 ```yaml
 {
   foo: { bar: "world" },
-  a = 2
+  a: 2
 }
 ```
 
