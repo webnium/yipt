@@ -59,29 +59,6 @@ import { Yipt } from "yipt";
 
 const yipt = new Yipt();
 ```
-
-## Template
-
-### Absatract
-Yipt template is a YAML file whose root object has `yipt` property, which is a Yipt object.
-And Yipt object has `content` property, which is an array of Element object or string.
-If element of `content` is a string, it is treated as TextElement.
-
-Yipt renders Elements in order of array.
-
-Element object is one of:
-
-Element name|Description
----|---
-TextElement| Renders text.
-ImageElement| Renders JPEG/PNG image.
-VectorElement| Renders vector graphics.
-FontElement| Setup font for text.
-PageBreakElement|Insert page break.
-BlockElement|Groups elements and control offset.
-CaseElement|Logical flow control in similar way to SQL's CASE syntax.
-ForeachElement|Loop flow control.
-
 ### Variable evaluation
 Yipt supports template variables.
 Many of parameters in template are evaluated with template variables using [JSONata](http://jsonata.org/).
@@ -138,6 +115,28 @@ output:
     {but this never evaluted} because { is escaped.
     Then "\{" and "\\" is rendered as "{" and "\".
 ```
+
+## Template
+
+### Absatract
+Yipt template is a YAML file whose root object has `yipt` property, which is a Yipt object.
+And Yipt object has `content` property, which is an array of Element object or string.
+If element of `content` is a string, it is treated as TextElement.
+
+Yipt renders Elements in order of array.
+
+Element object is one of:
+
+Element name|Description
+---|---
+TextElement| Renders text.
+ImageElement| Renders JPEG/PNG image.
+VectorElement| Renders vector graphics.
+FontElement| Setup font for text.
+PageBreakElement|Insert page break.
+BlockElement|Groups elements and control offset.
+CaseElement|Logical flow control in similar way to SQL's CASE syntax.
+ForeachElement|Loop flow control.
 
 ### Spec
 
