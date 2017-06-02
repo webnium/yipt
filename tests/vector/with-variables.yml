@@ -1,0 +1,20 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: vector
+      lineWidth: lineWidth
+      cap: cap
+      join: join
+      dash:
+        length: dash.length
+        space: dash.space
+        phase: dash.phase
+      color: color
+      opacity: opacity
+      paths:
+        - {type: move, to: [left, $doc.y + 12]}
+        - {type: line, to: lineTo}
+        - {type: quadraticCurve, to: quadraticTo, anchor: quadraticAnchor}
+        - {type: bezierCurve, to: bezierTo, anchors: bezierAnchor}
+        - {type: verticalLine, length: verticalLineLength}
+        - {type: horizontalLine, length: horizontalLineLength}

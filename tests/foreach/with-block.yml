@@ -1,0 +1,25 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: foreach
+      items: items
+      content:
+        type: block
+        content:
+          - "{$foreach.item.name}"
+          - type: text
+            top: 0
+            left: 240
+            width: 12*8
+            align: right
+            content: ${$foreach.item.price}
+          - type: text
+            top: 0
+            left: 240 + 12 * 8
+            width: 30
+            align: right
+            content: "{$foreach.item.price}"
+          - type: text
+            top: 0
+            left: 240 + 12 * 8 + 30
+            content: "{$foreach.item.subtotal}"

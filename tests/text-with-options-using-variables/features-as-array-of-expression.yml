@@ -1,0 +1,12 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: text
+      content: text with top, left and options.
+      top: top
+      left: left
+      options:
+        features:
+          - feature
+          - some.tags[0]
+          - bar

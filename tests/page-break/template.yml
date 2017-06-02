@@ -1,0 +1,9 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: pageBreak
+    - type: pageBreak
+      options:
+        size: A4
+        margin: 50
+        layout: landscape

@@ -1,0 +1,36 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: vector
+      render: fill
+      top: 20 # start position y
+      left: 0 # start position x
+      paths:
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}
+    - type: vector
+      render: fill
+      left: 0 # start position x
+      top: 350 # start position y
+      fillColor: red
+      paths:
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}
+    - type: vector
+      render: fill
+      left: 0 # start position x
+      top: 700
+      fillColor: fillColor
+      windingRule: even-odd
+      paths:
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}

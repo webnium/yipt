@@ -1,0 +1,16 @@
+date: 2017-03-22T21:23:56
+title: Title is a face.
+items:
+  - name: foo
+    amount: 1
+    price: 200
+    subtotal: 200
+  - name: bar
+    amount: 2
+    price: 100
+    subtotal: 200
+  - name: this is long name long long long name
+    amount: 11
+    price: 1000
+    subtotal: 11000
+total: 11400

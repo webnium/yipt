@@ -1,0 +1,4 @@
+yipt:
+  version: "1.0"
+  content:
+    - '{$dateFormat(date, "yyyy-mm-dd HH:MM:ss")} and {$dateFormat(timestamp, "yyyy-mm-dd HH:MM:ss")}'

@@ -1,0 +1,10 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: foreach
+      items: items
+      content:
+        type: foreach
+        items: items2
+        content: "{$loops[1].count}-{$foreach.count} {$loops[1].item} {$foreach.item}"
+

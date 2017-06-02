@@ -1,0 +1,17 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: text
+      top: 10
+      left: 20
+      content: blablabla
+    - type: text
+      content: blablabla
+    - type: text
+      top: 20
+      content: blablabla
+    - type: text
+      left: 20
+      content: blablabla
+    - syntax sugar
+    - escape \{ and \\}

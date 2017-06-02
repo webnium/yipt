@@ -1,0 +1,27 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: text
+      content: text with top, left and options.
+      top: top
+      left: left
+      options:
+        lineBreak: text.lineBreak
+        width: text.width
+        height: text.height
+        align: text.align
+        ellipsis: text.ellipsis
+        columns: text.columns
+        columnGap: text.columnGap
+        indent: text.indent
+        paragraphGap: text.paragraphGap
+        lineGap: text.lineGap
+        wordSpacing: text.wordSpacing
+        characterSpacing: text.characterSpacing
+        fill: text.fill
+        stroke: text.stroke
+        link: text.link
+        underline: text.underline
+        strike: text.strike
+        continued: text.continued
+        features: text.features[]

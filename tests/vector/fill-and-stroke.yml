@@ -1,0 +1,49 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: vector
+      render: fillAndStroke
+      top: 20 # start position y
+      left: 0 # start position x
+      paths:
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}
+    - type: vector
+      render: fillAndStroke
+      left: 0 # start position x
+      top: 350 # start position y
+      fillColor: red
+      color: blue
+      paths:
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}
+    - type: vector
+      render: fillAndStroke
+      left: 0 # start position x
+      top: 700
+      fillColor: red
+      windingRule: even-odd
+      paths:
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}
+    - type: vector
+      render: fillAndStroke
+      left: 0 # start position x
+      top: 350 # start position y
+      fillColor: fillColor
+      color: color
+      paths:
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}

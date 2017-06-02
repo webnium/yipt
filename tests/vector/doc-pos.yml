@@ -1,0 +1,82 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: vector
+      top: 5
+      left: 10
+      paths:
+        - {type: line, to: [100, 160]}
+    - "line, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+    - "quadraticCurve, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 100, 200]}
+    - "bezierCurve, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - {type: verticalLine, length: 30}
+    - "verticalLine, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - {type: horizontalLine, length: 50}
+    - "horizontalLine, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - { type: rect, pos: [0, 5], width: 10, height: 30}
+    - "rect, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - { type: roundedRect, pos: [50, 100], width: 50, height: 100, cornerRadius: 10}
+    - "roundedRect, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - { type: ellipse, center: [0, 0], radiusX: 60, radiusY: 40}
+    - "ellipse, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - { type: circle, center: [0, 300], radius: 40}
+    - "circle, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - { type: polygon, vertices: [0, 350, 100, 350, 50, 400]}
+    - "polygon, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - {type: move, to: [10, 50]}
+        - {type: line, to: [0, 0]}
+    - "move, x: {$doc.x}, y: {$doc.y}"
+    - type: vector
+      top: 0
+      left: 0
+      paths:
+        - {type: move, to: [0, 20]}
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}
+    - "complex, x: {$doc.x}, y: {$doc.y}"
+

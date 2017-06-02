@@ -1,0 +1,11 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: vector
+      render: fill
+      paths:
+        - { type: rect, pos: [0, 5], width: 10, height: 30}
+        - { type: roundedRect, pos: [0, 40], width: 50, height: 100, cornerRadius: 10}
+        - { type: ellipse, center: [0, 200], radiusX: 60, radiusY: 40}
+        - { type: circle, center: [0, 300], radius: 40}
+        - { type: polygon, vertices: [0, 350, 100, 350, 50, 400]}

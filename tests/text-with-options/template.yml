@@ -1,0 +1,22 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: text
+      content: text with top, left and options.
+      top: 10
+      left: 20
+      options:
+        width: 500
+        align: justify
+    - type: text
+      content: |-
+        Long text for gap testing. This text is enough long to test gap settings.
+        And this has multiple lines.
+
+        Is this enough long?
+      options:
+        width: 200
+        columns: 2
+        columnGap: 16
+        indent: 10
+        paragraphGap: 16

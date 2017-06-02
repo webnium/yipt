@@ -1,0 +1,6 @@
+yipt:
+  version: "100.0"
+  content:
+    - type: text
+      top: 10
+      left: 20

@@ -1,0 +1,16 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: case
+      conditions:
+        - when: $.foo > 0
+          content:
+            type: text
+            content: foo is larger than 0.
+        - when: $.bar.isTrue
+          content:
+            type: text
+            content: bar.isTrue is true.
+      else:
+        type: text
+        content: It doesn't match to any case.

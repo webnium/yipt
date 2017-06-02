@@ -1,0 +1,6 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: foreach
+      items: items
+      content: "[{$foreach.index}] {$foreach.count}/{$foreach.total} - {$foreach.item}"

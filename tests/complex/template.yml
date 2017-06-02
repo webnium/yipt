@@ -1,0 +1,127 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: font
+      size: 32
+    - type: text
+      content: "{title}"
+      options:
+        lineBreak: true
+        align: center
+    - type: font
+      name: Times-Bold
+      size: 12
+    - type: block
+      top: $block.y + 36
+      content:
+        - Name
+        - type: vector
+          top: $block.y - 3
+          left: $block.x
+          width: 1
+          paths:
+            - type: horizontalLine
+              length: 108
+        - type: text
+          top: 0
+          left: 120
+          options:
+            width: 12*4
+          content: Price
+        - type: vector
+          top: $block.y - 3
+          left: $block.x
+          width: 1
+          paths:
+            - type: horizontalLine
+              length: 48
+        - type: text
+          top: 0
+          left: 120 + 12 * 5
+          options:
+            width: 30
+          content: Q.
+        - type: vector
+          top: $block.y - 3
+          left: $block.x
+          width: 1
+          paths:
+            - type: horizontalLine
+              length: 30
+        - type: text
+          top: 0
+          left: 120 + 12 * 6 + 30
+          options:
+            width: 12 * 10
+          content: Subtotal
+        - type: vector
+          top: $block.y - 3
+          left: $block.x
+          width: 1
+          paths:
+            - type: horizontalLine
+              length: 120
+    - type: font
+      name: Times-Roman
+    - type: foreach
+      items: items
+      content:
+        type: block
+        top: $block.y + 6
+        content:
+          - type: text
+            content: "{$foreach.item.name}"
+            options:
+              width: 110
+              height: 12
+              lineBreak: false
+              ellipsis: "..."
+          - type: vector
+            top: $block.y - 3
+            left: $block.x
+            width: 0
+            paths:
+            - type: horizontalLine
+              length: 108
+          - type: text
+            top: 0
+            left: 120
+            options:
+              width: 12*4
+              align: right
+            content: ${$foreach.item.price}
+          - type: vector
+            top: $block.y - 3
+            left: $block.x
+            width: 0
+            paths:
+              - type: horizontalLine
+                length: 48
+          - type: text
+            top: 0
+            left: 120 + 12 * 5
+            options:
+              width: 30
+              align: right
+            content: "{$foreach.item.amount}"
+          - type: vector
+            top: $block.y - 3
+            left: $block.x
+            width: 0
+            paths:
+              - type: horizontalLine
+                length: 30
+          - type: text
+            top: 0
+            left: 120 + 12 * 6 + 30
+            options:
+              width: 12 * 10
+              align: right
+            content: "{$foreach.item.subtotal}"
+          - type: vector
+            top: $block.y - 3
+            left: $block.x
+            width: 0
+            paths:
+              - type: horizontalLine
+                length: 120

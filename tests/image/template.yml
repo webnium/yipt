@@ -1,0 +1,26 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: image
+      src: /path/to/image.jpg
+    - type: image
+      top: 20
+      left: 10
+      src: /path/to/image.png
+    - type: image
+      src: /path/to/other-image.jpg
+      options:
+        width: 100
+        height: 200
+    - type: image
+      src: /path/to/other-image.jpg
+      left: 20
+      top: 30
+      options:
+        scale: 0.25
+    - type: image
+      src: /path/to/other-image.jpg
+      left: 20
+      top: 40
+      options:
+        fit: [100, 200]

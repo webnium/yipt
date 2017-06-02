@@ -1,0 +1,26 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: block
+      top: 40
+      left: 60
+      content:
+        - type: text
+          top: 10
+          left: 20
+          content: text in block.
+        - type: vector
+          top: 20 # start position y
+          left: 10 # start position x
+          paths:
+            - {type: line, to: [100, 160]}
+            - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+            - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+            - {type: verticalLine, length: 30}
+            - {type: horizontalLine, length: 50}
+    - type: block
+      top: 100
+      left: 200
+      content:
+        - text in block without top nor left.
+        - 2nd text in block without top nor left.

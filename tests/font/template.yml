@@ -1,0 +1,37 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: font
+      registerAs: my-font-with-family
+      src: /path/to/my-font.ttc
+      family: my-family
+    - type: font
+      registerAs: my-font-without-family
+      src: /path/to/my-font.ttf
+    - type: font
+      src: /path/to/my-font.ttc
+      family: my-family
+    - type: font
+      src: /path/to/my-font.ttf
+    - type: font
+      src: /path/to/my-font.ttc
+      family: my-family
+      size: 13
+    - type: font
+      src: /path/to/my-font.ttf
+      size: 14
+    - type: font
+      name: Times-Roman
+    - type: font
+      name: Times-Roman
+      size: 15
+    - type: font
+      size: 10
+    - type: font
+      registerAs: my-font-set-on-register
+      src: /path/to/my-font.ttf
+      setOnRegister: true
+    - type: font
+      registerAs: my-font-register-with-size
+      src: /path/to/my-font.ttf
+      size: 12

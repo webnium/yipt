@@ -1,0 +1,16 @@
+yipt:
+  version: "1.0"
+  content:
+    - 'Hello {name ? name : "world"}!'
+    - "doc.x: {$doc.x}"
+    - "doc.y: {$doc.y}"
+    - "block.x: {$block.x}"
+    - "block.y: {$block.y}"
+    - "offset.left: {$offset.left}"
+    - "offset.top: {$offset.top}"
+    - "page.top: {$page.top}"
+    - "page.left: {$page.left}"
+    - "page.right: {$page.right}"
+    - "page.bottom: {$page.bottom}"
+    - "doc.currentLineHeight(): {$doc.currentLineHeight()}"
+    - "doc.currentLineHeight(true): {$doc.currentLineHeight(true)}"

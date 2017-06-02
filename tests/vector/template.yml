@@ -1,0 +1,20 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: vector
+      lineWidth: 1
+      cap: round
+      join: bevel
+      dash:
+        length: 5
+        space: 10
+        phase: 1
+      color: red
+      opacity: 0.9
+      paths:
+        - {type: move, to: [0, 20]}
+        - {type: line, to: [100, 160]}
+        - {type: quadraticCurve, to: [150, 120], anchor: [130, 200]}
+        - {type: bezierCurve, to: [300, 150], anchors: [190, -40, 200, 200]}
+        - {type: verticalLine, length: 30}
+        - {type: horizontalLine, length: 50}

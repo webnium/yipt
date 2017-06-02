@@ -1,0 +1,12 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: image
+      src: /path/to/image.jpg
+      left: 160
+      top: 100
+      options:
+        width: options.width
+        height: options.height
+        scale: options.scale
+        fit: ["options.fit[0]", "options.fit[1]"]
