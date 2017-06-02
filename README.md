@@ -3,6 +3,7 @@
 Yipt is a YAML based template engine generates PDF document.
 
 Yipt uses [PDFKit](http://pdfkit.org/) for PDF generation and [JSONata](http://jsonata.org/) for template variables.
+
 ## Install
 
 ```bash
