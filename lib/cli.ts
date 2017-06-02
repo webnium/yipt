@@ -7,7 +7,7 @@
 
 "use strict";
 
-import * as commander from "commander";
+import {Command} from "commander";
 import * as PDFKit from "pdfkit";
 import * as jsYaml from "js-yaml";
 import {readFile} from "sb-fs";
@@ -17,6 +17,7 @@ import WritableStream = NodeJS.WritableStream;
 
 const pkg = require("../package.json");
 
+const commander = new Command(pkg.name);
 commander.version(pkg.version)
     .option("-p, --params <file>", "A json or yaml file includes template parameters.")
     .arguments("<input> [output]")
