@@ -1,0 +1,8 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: list
+      content:
+        - "Hello"
+        - "World"
+        - "!"

@@ -1,0 +1,7 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: text
+      content: "{name}"
+    - type: list
+      content: "{items}"

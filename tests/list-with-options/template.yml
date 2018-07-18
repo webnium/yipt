@@ -1,0 +1,15 @@
+yipt:
+  version: "1.0"
+  content:
+    - type: list
+      top: 10
+      left: 20
+      content:
+        - "item 1"
+        - "item 2"
+        - "item 3"
+      options:
+        width: 200
+        indent: 10
+        bulletRadius: 2
+        textIndent: 20
